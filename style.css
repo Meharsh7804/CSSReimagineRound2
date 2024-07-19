@@ -14,10 +14,11 @@ body {
 
 .video {
   position: absolute;
-  width: 99.9vw;
-  height: 99.5vh;
+  width: 98.7vw;
+  height: 100vh;
   background-color: black;
   z-index: 10;
+  overflow: hidden;
 }
 
 .video video {
@@ -269,7 +270,7 @@ body {
   bottom: 0;
   width: 20%;
   z-index: 2;
-  pointer-events: none; 
+  pointer-events: none;
 }
 
 .marquee-container::before {
@@ -303,14 +304,14 @@ body {
 
 /* CATEGORIES */
 
-.categories h1{
+.categories h1 {
   font-size: 36px;
   font-weight: 700;
   margin-left: 2vw;
   margin-top: 2vw;
 }
 
-.categories .underline{
+.categories .underline {
   width: 25vw;
   height: 5px;
   background: #ff670e;
@@ -318,8 +319,182 @@ body {
   margin-bottom: 2vw;
 }
 
-.categories .container{
+.container {
   display: flex;
+  max-width: 95vw;
+  gap: 10px;
+  margin-left: 2vw;
+}
+
+#item1 {
+  width: 35%;
+  height: 30vw;
+  background-image: url(./assets/sweets.jpg);
+  background-position: center;
+}
+#item2 {
+  width: 50%;
+  height: 30vw;
+  background-image: url(./assets/namkeen.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#item3 {
+  width: 25%;
+  height: 30vw;
+  background-image: url(./assets/beverages.jpg);
+  background-position: center;
+}
+#item4 {
+  width: 40%;
+  height: 30vw;
+  background-image: url(./assets/cookies.jpg);
+}
+#item5 {
+  width: 25%;
+  height: 30vw;
+  background-image: url(/assets/ready\ to\ eat.jpg);
+  background-position: center;
+}
+#item6 {
+  width: 35%;
+  height: 30vw;
+  background-image: url(./assets/gifting.jpg);
+  background-position: center;
+}
+
+.item img {
+  width: 100%;
+  display: block;
+}
+
+.margin {
+  margin-top: 0.7vw;
+}
+
+.item {
+  position: relative;
+  overflow: hidden; /* Ensure the overflow from overlay is hidden */
+}
+
+.overlay {
+  background-color: #101010d1;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(100%);
+  transition: opacity 0.75s ease-in-out, visibility 0s 1s,
+    transform 0.75s ease-in-out;
+}
+
+.item:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition-delay: 0s;
+}
+
+.overlay .text {
+  font-size: 1.5em;
+}
+
+.overlay button {
+  background: red;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
 }
 
 /* CATEGORIES */
+
+/* PRODUCT */
+
+.product-layout {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+  gap: 20px;
+}
+.category {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: gray;
+  position: relative;
+}
+.category::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: yellow;
+}
+.category.best-sellers::after {
+  right: 0;
+}
+.category.premium::after {
+  left: 0;
+}
+.product {
+  width: 100%;
+  padding-top: 150%;
+  background-color: #ddd;
+}
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.row {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 1024px) {
+  .product-layout {
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .product-layout {
+    grid-template-columns: 1fr;
+  }
+  .products {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .product {
+    padding-top: 100%;
+  }
+  .category {
+    writing-mode: horizontal-tb;
+    text-align: center;
+  }
+  .category::after {
+    width: 100%;
+    height: 2px;
+  }
+  .category.best-sellers::after {
+    bottom: 0;
+    right: auto;
+  }
+  .category.premium::after {
+    top: 0;
+    left: auto;
+  }
+}
+
+/* PRODUCT */
