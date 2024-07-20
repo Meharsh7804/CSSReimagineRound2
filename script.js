@@ -43,3 +43,28 @@ gsap.timeline()
     repeat: -1,
     yoyo : true
   }) 
+
+
+const scrollingContent = document.getElementById('scrolling-content1');
+const cards = Array.from(scrollingContent.children);
+
+const duplicateCards = () => {
+  const contentWidth = scrollingContent.scrollWidth;
+  const containerWidth = scrollingContent.parentElement.clientWidth;
+
+  if (contentWidth < containerWidth * 2) {
+    cards.forEach(card => {
+      const clone = card.cloneNode(true);
+      scrollingContent.appendChild(clone);
+    });
+    duplicateCards(); // Recursively ensure there are enough cards
+  }
+};
+
+duplicateCards();
+
+scrollingContent.addEventListener('animationiteration', () => {
+  scrollingContent.appendChild(scrollingContent.firstElementChild);
+});
+
+
