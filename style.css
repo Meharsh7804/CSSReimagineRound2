@@ -12,6 +12,35 @@ body {
   width: 100%;
 }
 
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; /* or any background color that fits your design */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's on top of other elements */
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+#preloader.fade-out {
+  opacity: 0;
+}
+
+#preloader img {
+  width: 300px; /* Adjust the size as needed */
+  height: 300px;
+}
+
+.content {
+  display: none; /* Hide the content initially */
+}
+
 .video {
   position: absolute;
   width: 98.7vw;

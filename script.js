@@ -68,3 +68,17 @@ scrollingContent.addEventListener('animationiteration', () => {
 });
 
 
+
+window.addEventListener('load', () => {
+  const preloader = document.getElementById('preloader');
+  const content = document.querySelector('.content');
+
+  setTimeout(() => {
+      preloader.classList.add('fade-out');
+      content.style.display = 'block';
+  }, 5000); // 3000ms = 3 seconds
+
+  preloader.addEventListener('transitionend', () => {
+      preloader.style.display = 'none';
+  });
+});
