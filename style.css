@@ -5,12 +5,14 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  /* overflow-x: hidden; */
 }
 html,
 body {
   height: 100%;
   width: 100%;
   cursor: url('./assets/cursor2.gif'), auto;
+  
 }
 
 
@@ -545,6 +547,7 @@ body {
   /* background: #101010; */
    background: linear-gradient(to right, #afe5f5, #068ff8);
    padding-bottom: 20px;
+   overflow-x: hidden;
 }
 .scrolling-container1 {
   width: 100vw;
@@ -593,6 +596,7 @@ body {
   /* background: #101010; */
    background: linear-gradient(to left, #f8c7ee, #fa1ffe);
    padding-bottom: 20px ;
+   overflow-x: hidden;
 }
 
 
