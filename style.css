@@ -618,6 +618,7 @@ body {
   }
 }
 
+
 /* Footer Section Css  */
 .footer{
   background-color: #f7f7f7;
@@ -703,4 +704,151 @@ i{
   height: 20px;
   scale: 1.3;
 }
+.subscribe{
+  position: relative;
+}
 
+@media (max-width: 600px) {
+  .footer {
+    /* padding: 1rem; */
+    height: 200px;
+  }
+  svg{
+    position: absolute;
+    left:10px;
+    top:8px;
+  }
+  .subscribe {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .subs1 p{
+    text-align: center;
+    padding-left: 35px;
+  }
+  .subs1 {
+    padding-right: 0;
+    font-size: 10px;
+    /* flex-direction: row; */
+    align-items: center;
+    gap: 10px;
+    margin-bottom: -10px;
+  }
+
+  .subs2 {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .subsec {
+    padding-top: 10px;
+    margin-bottom: 10px;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+
+  input {
+    width: 80%;
+  }
+
+  .baseFooter {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-top: 1rem;
+  }
+
+  .f1 {
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+
+  .f1_1 {
+    width: 100%;
+    border-bottom: 1px solid rgb(224, 218, 218);
+    padding-bottom: 1rem;
+  }
+
+  .images img {
+    width: 100%;
+  }
+
+  .bottoms {
+    height: auto;
+    padding-top: 1rem;
+    text-align: center;
+    position: absolute;
+    bottom: -100px;
+  }
+
+  .bottoms div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+  #follow {
+    
+  }
+}
+
+
+/* 
+@media screen and (max-width:412px) {
+  .baseFooter{
+    height: 315px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 2.5rem;
+    padding-left:5rem;
+    border-bottom: 1px solid rgb(212, 209, 209);
+  }
+  .bottoms{
+    position: absolute;
+    bottom: 10px;
+  }
+
+  .subscribe{
+    padding-left: 30px;
+    height: 130px;
+    background-color: rgb(250, 196, 75);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .subs1,.subs2,.subsec{
+    height: 100%;
+    width: 100%;
+  }
+  .subs1{
+    padding-right: 40px;
+    font-size:25px;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .subsec{
+    display: flex;
+    align-items: center;
+  }
+  ::placeholder{
+    color: black;
+    font-style: italic;
+    font-size: 13.5px;
+    color: grey;
+    font-weight: 500;
+  }
+  input{
+    padding: 10px;
+    height: 40px;
+    border: none;
+    width: 300px;
+  }
+} */
