@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let tl = gsap.timeline();
     tl.to(".video", {
       scale: 0.125,
-      duration: 3,
+      duration: 1,
     });
 
     tl.to(".video", {
@@ -31,54 +31,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* PRELOADER VIDEO */
 
-gsap.timeline()
+gsap
+  .timeline()
   .from(".floating-text", {
     x: "-100%",
-    duration: 3
-  }) 
+    duration: 3,
+  })
   .to(".floating-text", {
     x: "20%",
     duration: 10,
     ease: "none",
     repeat: -1,
-    yoyo : true
-  }) 
-
-
-const scrollingContent = document.getElementById('scrolling-content1');
-const cards = Array.from(scrollingContent.children);
-
-const duplicateCards = () => {
-  const contentWidth = scrollingContent.scrollWidth;
-  const containerWidth = scrollingContent.parentElement.clientWidth;
-
-  if (contentWidth < containerWidth * 2) {
-    cards.forEach(card => {
-      const clone = card.cloneNode(true);
-      scrollingContent.appendChild(clone);
-    });
-    duplicateCards(); // Recursively ensure there are enough cards
-  }
-};
-
-duplicateCards();
-
-scrollingContent.addEventListener('animationiteration', () => {
-  scrollingContent.appendChild(scrollingContent.firstElementChild);
-});
-
-
-
-window.addEventListener('load', () => {
-  const preloader = document.getElementById('preloader');
-  const content = document.querySelector('.content');
-
-  setTimeout(() => {
-      preloader.classList.add('fade-out');
-      content.style.display = 'block';
-  }, 5000); // 3000ms = 3 seconds
-
-  preloader.addEventListener('transitionend', () => {
-      preloader.style.display = 'none';
+    yoyo: true,
   });
+
+/* ANIMATED DIV */
+document.addEventListener("scroll", function () {
+  var targetDiv = document.querySelector(".animated-div");
+  var prevDiv = targetDiv.previousElementSibling;
+
+  var prevDivBottom = prevDiv.offsetTop + prevDiv.offsetHeight;
+  var scrollTriggerToShow = prevDivBottom * 0.5; 
+  var scrollTriggerToHide = prevDivBottom + window.innerHeight; 
+  if (
+    window.scrollY > scrollTriggerToShow &&
+    window.scrollY < scrollTriggerToHide
+  ) {
+    targetDiv.style.visibility = "visible";
+    targetDiv.style.opacity = "1";
+    targetDiv.style.animation = "bouncyAppear 1s forwards";
+  } else if (window.scrollY >= scrollTriggerToHide) {
+    targetDiv.style.opacity = "0";
+    targetDiv.style.visibility = "hidden";
+    targetDiv.style.animation = "none";
+  }
 });

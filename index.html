@@ -5,21 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Haldiram's</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="stylesheet" href="styles.css" /> -->
-    <script defer src="https://unpkg.com/gsap@3/dist/Draggable.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
-    <!-- <script defer src="main.js"></script> -->
   </head>
   <body>
-  <div id="preloader">
-      <img src="./assets/preloader.gif" alt="Loading...">
-  </div>
-    <div class="content">
-
-      <div class="video">
-        <video src="./assets/haldirams.mp4" autoplay muted></video>
-        <button id="skipBtn">Skip Video</button>
-      </div>
+    <div class="video">
+      <video src="./assets/haldirams.mp4" autoplay muted></video>
+      <button id="skipBtn">Skip Video</button>
+    </div>
 
     <section class="navigation">
       <div class="navbar">
@@ -37,24 +28,24 @@
           <img src="./assets/icon _heart.png" alt="" /><img
             src="./assets/icon _user.png"
             alt=""
-            /><img src="./assets/icon _shopping bag.png" alt="" />
-          </div>
+          /><img src="./assets/icon _shopping bag.png" alt="" />
         </div>
-      </section>
-      <section class="hero">
-        <div class="hero-content">
-          <div class="left">
-            <div class="floating-text">tradition</div>
-            <div class="main-content">
-              <img src="./assets/text.png" alt="" />
-            </div>
-            <button>ORDER NOW</button>
-            <p>Moti Choor Ladoo | Moong Burfee | Milk Cake | Mewa Bites Combo</p>
+      </div>
+    </section>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="left">
+          <div class="floating-text">tradition</div>
+          <div class="main-content">
+            <img src="./assets/text.png" alt="" />
           </div>
-          <div class="right">
-            <img class="dot" src="./assets/dots.png" alt="" />
-            <div class="combo">
-              <img src="./assets/laddoo box.png" alt="" />
+          <button>ORDER NOW</button>
+          <p>Moti Choor Ladoo | Moong Burfee | Milk Cake | Mewa Bites Combo</p>
+        </div>
+        <div class="right">
+          <img class="dot" src="./assets/dots.png" alt="" />
+          <div class="combo">
+            <img src="./assets/laddoo box.png" alt="" />
             <img src="./assets/moong barfi box.png" alt="" />
             <img src="./assets/milk cake box.png" alt="" />
             <img src="./assets/mewa bites box.png" alt="" />
@@ -65,16 +56,33 @@
 
     <div class="hero-footer">
       <div class="marquee-container">
-          <marquee>
-            Delivering PAN India &amp; Free Shipping across India on Orders above
-            ₹500| Estimated Standard Delivery Timeline of 3-5 Working Days, Though
-            Delivery Time May Vary Depending On Pin Code CAUTION - Beware of
-            Fraud!! We do not accept / encourage online payments with respect to
-            super stockist / distributorship / franchisee / employment.
-          </marquee>
+        <marquee>
+          Delivering PAN India &amp; Free Shipping across India on Orders above
+          ₹500| Estimated Standard Delivery Timeline of 3-5 Working Days, Though
+          Delivery Time May Vary Depending On Pin Code CAUTION - Beware of
+          Fraud!! We do not accept / encourage online payments with respect to
+          super stockist / distributorship / franchisee / employment.
+        </marquee>
       </div>
       <button>Track order</button>
       <button>E-Coupons</button>
+    </div>
+
+    <div class="animated-div">
+      <svg width="100%" height="100%">
+        <rect
+          x="0"
+          y="0"
+          width="100%"
+          height="100%"
+          fill="url(#polka-dots)"
+        ></rect>
+        <text x="28%" y="25%" text-anchor="middle">SPECIAL</text>
+      </svg>
+      <div class="content">
+        <img src="./assets/kaju_katli.png" alt="">
+        <div class="writing">Haldiram's Kaju Katli (340gms)</div>
+      </div>
     </div>
 
     <section class="categories">
@@ -118,261 +126,213 @@
           </div>
         </div>
       </div>
-        <section class="product-layout">
-      <div class="category best-sellers">BEST SELLERS</div>
-          <div class="products">
-            <div class="row">
-              <div class="product"></div>
-              <div class="product"></div>
-              <div class="product"></div>
-            </div>
-            <div class="row">
-              <div class="product"></div>
-              <div class="product"></div>
-              <div class="product"></div>
-            </div>
-          </div>
-          <div class="category premium">PREMIUM</div>
-        </section>
-        
-        
-        <!-- specials -->
-        <div class="specials">
-          <h1>Summer Specials</h1>
-          
-          
-          <div class="scrolling-container1">
-            <div class="scrolling-content1" id="scrolling-content1">
-              <!-- Repeat this block to simulate infinite scrolling -->
-              <div class="card">
-                <img class="image" src="https://www.themoviedb.org/t/p/original/bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg" alt="Movie Image">
-              </div>
-              <div class="card">
-                <img class="image" src="https://www.themoviedb.org/t/p/original/aWh8R6jeAbmiB4TsF6CjYFrUsI8.jpg" alt="Movie Image">
-              </div>
-              
-              <div class="card">
-              <img
-              class="image"
-                src="https://www.themoviedb.org/t/p/w220_and_h330_face/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg"
-              />
-            </div>
-        
-            
-            <div class="card">
-              <img
-                class="image"
-                src="https://www.themoviedb.org/t/p/original/vKEBse3BPU7crfAjdPNaC6WePnO.jpg"
-              />
-            </div>
-            <div class="card">
-                  <img
-                    class="image"
-                    src="https://www.themoviedb.org/t/p/original/bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg"
-                  />
-                </div>
-              </div>
-              
-              <div class="card">
-                <img
-                class="image"
-                src="https://www.themoviedb.org/t/p/original/aWh8R6jeAbmiB4TsF6CjYFrUsI8.jpg"
-                />
-                </div>
-          
-                
-                <div class="card">
-                  <img
-                  class="image"
-                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/3Tf8vXykYhzHdT0BtsYTp570JGQ.jpg"
-                  />
-                </div>
-                
-                
-                <div class="card">
-                  <img
-                  class="image"
-                  src="https://www.themoviedb.org/t/p/original/bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg"
-                  />
-                </div>
-                
-                
-                <div class="card">
-                  <img
-                  class="image"
-                  src="https://www.themoviedb.org/t/p/original/aWh8R6jeAbmiB4TsF6CjYFrUsI8.jpg"
-                  />
-                </div>
-                
-          
-                <div class="card">
-                <img
-                class="image"
-                src="https://www.themoviedb.org/t/p/w220_and_h330_face/3Tf8vXykYhzHdT0BtsYTp570JGQ.jpg"
-                />
-              </div>
-    
-            </div>
-          </div>
+    </section>
+
+    <section class="product-display">
+      <div class="wrapper">
+        <div class="text">
+          <h2 class="headline shine">BEST<br />SELLERS</h2>
+          <div class="underline"></div>
         </div>
-
-    <div class="arrivals">    
-      <h1>New Arrivals</h1>
-      <div class="scrolling-container">
-        <div class="scrolling-content2" id="scrolling-content1">
-          <!-- Repeat this block to simulate infinite scrolling -->
-          <div class="card">
-            <img class="image" src="https://www.themoviedb.org/t/p/original/bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg" alt="Movie Image">
-          </div>
-          <div class="card">
-            <img class="image" src="https://www.themoviedb.org/t/p/original/aWh8R6jeAbmiB4TsF6CjYFrUsI8.jpg" alt="Movie Image">
-          </div>
-          
-          <div class="card">
-            <img
-            class="image"
-            src="https://www.themoviedb.org/t/p/w220_and_h330_face/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg"
-            />
-          </div>
-          
-          
-          <div class="card">
-            <img
-              class="image"
-                src="https://www.themoviedb.org/t/p/original/vKEBse3BPU7crfAjdPNaC6WePnO.jpg"
-                />
-          </div>
-          <div class="card">
-            <img
-                class="image"
-                    src="https://www.themoviedb.org/t/p/original/bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg"
-                    />
-          </div>
-          <div class="card">
-            <img
-              class="image"
-              src="https://www.themoviedb.org/t/p/original/bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg"
-            />
-          </div>
-          <div class="card">
-            <img
-                    class="image"
-                    src="https://www.themoviedb.org/t/p/original/bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg"
-                    />
-          </div>
-                  
-          <div class="card">
-            <img
-                    class="image"
-                    src="https://www.themoviedb.org/t/p/original/aWh8R6jeAbmiB4TsF6CjYFrUsI8.jpg"
-                    />
-           </div>
-        
-                  
-          <div class="card">
-            <img
-                    class="image"
-                    src="https://www.themoviedb.org/t/p/w220_and_h330_face/3Tf8vXykYhzHdT0BtsYTp570JGQ.jpg"
-                    />
-          </div>
-        </div>         
+        <div class="product-1"></div>
+        <div class="product-2"></div>
+        <div class="product-3"></div>
       </div>
-    </div>
+      <div class="wrapper reverse">
+        <div class="text">
+          <h2 class="headline shine">PREMIUM</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="product-4"></div>
+        <div class="product-5"></div>
+        <div class="product-6"></div>
+      </div>
+    </section>
 
-    <section class="footer" >
-
+    <section class="footer">
       <div class="subscribe">
         <div class="subs1">
-            <svg xmlns="http://www.w3.org/2000/svg" width="37.616" height="35" viewBox="0 0 37.616 31.398" class="hidden mr-4 align-text-bottom md:inline-block">
-              <path fill="#303030" d="M20.647 62.167a.7.7 0 0 1-1.063-.9L36.3 41.551 2.6 55.148 0 56.225l10.686 4.326L27.7 47.886A.7.7 0 1 1 28.529 49L11.6 61.607l3.247 11.342 2.263-8.738h.017a.67.67 0 0 1 .029-.147.7.7 0 0 1 .912-.373L22.63 65.6l9.5 3.735a.658.658 0 0 0 .587-.027.7.7 0 0 0 .348-.506l2.285-15.265 2.268-11.384z" transform="translate(0 -41.551)"></path>
-            </svg>
-            <p style="line-height: 1.2;"> <span style="color: black;">SIGN UP FOR NEWSLETTER</span> <br> <span style="color:rgb(58, 57, 57); font-size: 20px;">Want To Get Letest Updates! Sign up For Free.</span></p> 
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="37.616"
+            height="35"
+            viewBox="0 0 37.616 31.398"
+            class="hidden mr-4 align-text-bottom md:inline-block"
+          >
+            <path
+              fill="#303030"
+              d="M20.647 62.167a.7.7 0 0 1-1.063-.9L36.3 41.551 2.6 55.148 0 56.225l10.686 4.326L27.7 47.886A.7.7 0 1 1 28.529 49L11.6 61.607l3.247 11.342 2.263-8.738h.017a.67.67 0 0 1 .029-.147.7.7 0 0 1 .912-.373L22.63 65.6l9.5 3.735a.658.658 0 0 0 .587-.027.7.7 0 0 0 .348-.506l2.285-15.265 2.268-11.384z"
+              transform="translate(0 -41.551)"
+            ></path>
+          </svg>
+          <p style="line-height: 1.2">
+            <span style="color: black">SIGN UP FOR NEWSLETTER</span> <br />
+            <span style="color: rgb(58, 57, 57); font-size: 20px"
+              >Want To Get Letest Updates! Sign up For Free.</span
+            >
+          </p>
         </div>
-  
+
         <div class="subs2">
           <div class="subsec">
             <div class="inputs">
-              <input type="text" placeholder="Enter Your Email Address">
+              <input type="text" placeholder="Enter Your Email Address" />
             </div>
-            <button style="border: none; height: 40px; padding: 10px; width: 130px;font-size: 15px; color: #fff; background-color: red;">Subscribe</button>
-          </div> 
+            <button
+              style="
+                border: none;
+                height: 40px;
+                padding: 10px;
+                width: 130px;
+                font-size: 15px;
+                color: #fff;
+                background-color: red;
+              "
+            >
+              Subscribe
+            </button>
+          </div>
         </div>
       </div>
-  
-      <div class="baseFooter" >
+
+      <div class="baseFooter">
         <div class="f1">
-          <h1>QUICK LINKS </h1>
-          <P>About Us</P>
-          <P>Our Process</P>
-          <P>CSR Activities</P>
-          <P>Recipies</P>
-          <P>Offices</P>
-          <P>Retail Stores & Restaurent</P>
-          <P>Store Locator</P>
+          <h1>QUICK LINKS</h1>
+          <p>About Us</p>
+          <p>Our Process</p>
+          <p>CSR Activities</p>
+          <p>Recipies</p>
+          <p>Offices</p>
+          <p>Retail Stores &amp; Restaurent</p>
+          <p>Store Locator</p>
         </div>
         <div class="f1">
-          <div class="f1_1" style=" width: 190px;border-bottom: 1px solid rgb(224, 218, 218);">
+          <div
+            class="f1_1"
+            style="width: 190px; border-bottom: 1px solid rgb(224, 218, 218)"
+          >
             <h1>OUR SERVICES</h1>
-            <P>Bulk Orders</P>
+            <p>Bulk Orders</p>
             <p>Careers</p>
             <p>Contact Us</p>
           </div>
-          <div class="f1_1" style="padding-top: 25px;" >
+          <div class="f1_1" style="padding-top: 25px">
             <h1>VIDEOS</h1>
-            <P>Brand Videos</P>
+            /
+            <p>Brand Videos</p>
             <p>Recipe Video</p>
           </div>
         </div>
-        <div class="f1" >
-          <h1>QUICK POLICIES </h1>
-          <P>Cancel & Refunds</P>
-          <P>Shipping </P>
-          <P>Payments</P>
-          <P>Terms & Contion</P>
-          <P>Privacy Policy</P>
-          <P>Quality Insurrance</P>
-          <P>Certificates & Accolodes</P>
+        <div class="f1">
+          <h1>QUICK POLICIES</h1>
+          <p>Cancel &amp; Refunds</p>
+          <p>Shipping</p>
+          <p>Payments</p>
+          <p>Terms &amp; Contion</p>
+          <p>Privacy Policy</p>
+          <p>Quality Insurrance</p>
+          <p>Certificates &amp; Accolodes</p>
         </div>
-        <div class="f1" style="width: 340px;">
+        <div class="f1" style="width: 340px">
           <div class="f1_1">
-            <h1>REACH US </h1>
-            <p style="font-size: 0.875 rem; line-height: 2.5; "><b>Email </b> : support@Haldiram.com</p>
-            <p style="font-size: 0.875 rem;line-height: 2.5; "><b>Call </b> : +91 72-2779451</p>
-            <p style="font-size: 0.875 rem; "><b>Customer Care Timings </b> :10:00 Am TO 6:00 Pm </p>
+            <h1>REACH US</h1>
+            <p style="font-size: 0.875 rem; line-height: 2.5">
+              <b>Email </b> : support@Haldiram.com
+            </p>
+            <p style="font-size: 0.875 rem; line-height: 2.5">
+              <b>Call </b> : +91 72-2779451
+            </p>
+            <p style="font-size: 0.875 rem">
+              <b>Customer Care Timings </b> :10:00 Am TO 6:00 Pm
+            </p>
           </div>
-          <div class="f1_1" style="padding-top: 40px;">
-            <h1>PAYMENT SECURED BY </h1>
+          <div class="f1_1" style="padding-top: 40px">
+            <h1>PAYMENT SECURED BY</h1>
             <div class="images">
-              <img src="https://www.haldirams.com/media/wysiwyg/Footer_Image_new_desk.jpg" alt="">
+              <img
+                src="https://www.haldirams.com/media/wysiwyg/Footer_Image_new_desk.jpg"
+                alt=""
+              />
             </div>
           </div>
         </div>
-        <div class="f1" id="follow" style="margin-left: 50px; position: relative;" >
-          <h1>FOLLOW US </h1>
+        <div
+          class="f1"
+          id="follow"
+          style="margin-left: 50px; position: relative"
+        >
+          <h1>FOLLOW US</h1>
           <div id="socials">
-            <ul style="list-style: none;">
-              <li style="display: flex; gap:20px; align-items: center;"><i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i><p>FaceBook</p></li>
-              <li style="display: flex; gap:20px; align-items: center;"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i><p>Instagram</p></li>
-              <li style="display: flex; gap:20px; align-items: center;"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i><p>Twitter</p></li>
-              <li style="display: flex; gap:20px; align-items: center;"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i><p>Youtube</p></li>
-              <li style="display: flex; gap:20px; align-items: center;"><i class="fa-brands fa-square-pinterest" style="color: #ffffff;"></i><p>Pinterest</p></li>
+            <ul style="list-style: none">
+              <li style="display: flex; gap: 20px; align-items: center">
+                <i
+                  class="fa-brands fa-square-facebook"
+                  style="color: #ffffff"
+                ></i>
+                <p>FaceBook</p>
+              </li>
+              <li style="display: flex; gap: 20px; align-items: center">
+                <i class="fa-brands fa-instagram" style="color: #ffffff"></i>
+                <p>Instagram</p>
+              </li>
+              <li style="display: flex; gap: 20px; align-items: center">
+                <i class="fa-brands fa-twitter" style="color: #ffffff"></i>
+                <p>Twitter</p>
+              </li>
+              <li style="display: flex; gap: 20px; align-items: center">
+                <i class="fa-brands fa-youtube" style="color: #ffffff"></i>
+                <p>Youtube</p>
+              </li>
+              <li style="display: flex; gap: 20px; align-items: center">
+                <i
+                  class="fa-brands fa-square-pinterest"
+                  style="color: #ffffff"
+                ></i>
+                <p>Pinterest</p>
+              </li>
             </ul>
           </div>
         </div>
       </div>
 
-    <div class="bottoms" style="width: 100%; height: 50px; padding-top: 10px;">
-      <div style="width: 100%; height:45px ; display: flex; ; justify-content: space-between">
-        <div style="width: 100%; align-items: center; padding-right: 40px; display: flex; justify-content: flex-end; height:100%; border-right: 2px solid #000000;">Copyright © 2024 Haldiram's India Pvt Ltd </div>
-        <div style="width: 100%; align-items: center; padding-left: 40px; display: flex;justify-content: flex-start; height:100%;">Powered By Graas</div>
+      <div class="bottoms" style="width: 100%; height: 50px; padding-top: 10px">
+        <div
+          style="
+            width: 100%;
+            height: 45px;
+            display: flex;
+            justify-content: space-between;
+          "
+        >
+          <div
+            style="
+              width: 100%;
+              align-items: center;
+              padding-right: 40px;
+              display: flex;
+              justify-content: flex-end;
+              height: 100%;
+              border-right: 2px solid #000000;
+            "
+          >
+            Copyright © 2024 Haldiram's India Pvt Ltd
+          </div>
+          <div
+            style="
+              width: 100%;
+              align-items: center;
+              padding-left: 40px;
+              display: flex;
+              justify-content: flex-start;
+              height: 100%;
+            "
+          >
+            Powered By Graas
+          </div>
+        </div>
       </div>
-    </div>
-      
-    </section> 
-    
-          
-  </div>
-  
+    </section>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
       integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
@@ -380,7 +340,5 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/ffd7998a80.js" crossorigin="anonymous"></script>
-    <!-- <script src="main.js"></script> -->
   </body>
 </html>
