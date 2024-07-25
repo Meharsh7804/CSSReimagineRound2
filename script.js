@@ -51,8 +51,8 @@ document.addEventListener("scroll", function () {
   var prevDiv = targetDiv.previousElementSibling;
 
   var prevDivBottom = prevDiv.offsetTop + prevDiv.offsetHeight;
-  var scrollTriggerToShow = prevDivBottom * 0.5; 
-  var scrollTriggerToHide = prevDivBottom + window.innerHeight; 
+  var scrollTriggerToShow = prevDivBottom * 0.55;
+  var scrollTriggerToHide = prevDivBottom + window.innerHeight;
   if (
     window.scrollY > scrollTriggerToShow &&
     window.scrollY < scrollTriggerToHide
